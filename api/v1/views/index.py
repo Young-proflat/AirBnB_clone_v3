@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""index"""
+"""creating an index file"""
 from api.v1.views import app_views
 from flask import jsonify
 from models import storage
@@ -17,7 +17,7 @@ classes = {"users": "User", "places": "Place", "states": "State",
 
 @app_views.route('/status', methods=['GET'])
 def status():
-    ''' routes to status page '''
+    '''routes to status page'''
     return jsonify({'status': 'OK'})
 
 
